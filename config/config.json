@@ -1,0 +1,14 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "../homeschool_dev.db"
+  },
+  "test": {
+    "dialect": "sqlite",
+    "storage": "../homeschool_test.db"
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "../homeschool.db"
+  }
+}
