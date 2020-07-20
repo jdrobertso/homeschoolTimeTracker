@@ -3,9 +3,17 @@ extends layout
 block content
   table(class='table table-hover')
     each obj in subjectTypes
-      tr(data-toggle='collapse' data-target='#{obj.id}' class='accordion-toggle')
-        td #{obj.name}
-        td #{obj.dailyTotal} / #{obj.dailyGoal}
+      tr
+        td
+          strong #{obj.name}
+        td
+          strong #{obj.dailyTotal || 0} / #{obj.dailyGoal} minutes
+      each subject in obj.Subjects
+        tr
+          td
+            a(href=`/subject/${subject.id}`) #{subject.name}
+          td
+            a.btn.btn-orange(href=`/timeentry/new/${subject.id}`) Add time
     else
       tr
         td No subjects found

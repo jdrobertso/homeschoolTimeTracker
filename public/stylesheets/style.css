@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.btn-orange {
+  background-color: #F36D21 !important;
+}
+
+.btn-yellow {
+  background-color: #F7CC15!important;
+}

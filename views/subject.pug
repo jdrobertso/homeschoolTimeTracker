@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= subject.name
+  table.table.table-hover
+    tr
+      th Time Spent
+      th Created At
+      th
+    each timeEntry in subject.TimeEntries
+      tr
+        td #{timeEntry.timeSpent} minutes
+        td= timeEntry.createdAt
+        td
+          a.btn.btn-yellow(href=`/timeentry/delete/${timeEntry.id}`) Delete
