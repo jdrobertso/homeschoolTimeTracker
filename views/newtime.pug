@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Add time for #{subject.name}
+  form(action="/timeentry/new" method="POST")
+    label Time spent on subject (in minutes):
+      input(type='text' name='time' placeholder='60')
+      input(type='hidden' name='subjectId' value=`${subject.id}`)
+    input(type='submit')

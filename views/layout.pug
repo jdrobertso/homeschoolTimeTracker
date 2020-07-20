@@ -2,9 +2,11 @@ doctype html
 html
   head
     title= title
+    link(rel='icon', href='/header.png')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
   body
     div(class='text-center')
-      img(src="/header.png", alt="", class="img-fluid")
+      a(href='/')
+        img.img-fluid(src="/header.png", alt="")
     block content

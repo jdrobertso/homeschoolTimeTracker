@@ -1,11 +1,6 @@
-### Node Express template project
+![Sundance Academy Logo](/public/header.png)
 
-This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
+### Project for Sundance Academy Homeschooling
 
-Improvements can be proposed in the [original project](https://gitlab.com/gitlab-org/project-templates/express).
+This project is intended only to be used by the Sundance Academy. Its purpose is to track time for the 2020 school year.
 
-### CI/CD with Auto DevOps
-
-This template is compatible with [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/).
-
-If Auto DevOps is not already enabled for this project, you can [turn it on](https://docs.gitlab.com/ee/topics/autodevops/#enabling-auto-devops) in the project settings.
